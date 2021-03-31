@@ -7,7 +7,7 @@ class WhatsappBot:
         # Parte 1 - A mensagem que você quer enviar
         self.mensagem = "Testando mensagem do BOT"
         # Parte 2 - Nome dos grupos ou pessoas a quem você deseja enviar a mensagem
-        self.grupos_ou_pessoas = ["Estudos", "Minhas coisas", "Usmailoko", "Work 365"]
+        self.grupos_ou_pessoas = ["Estudos", "Minhas coisas"]
         options = webdriver.ChromeOptions()
         options.add_argument('lang=pt-br')
         self.driver = webdriver.Chrome(
@@ -21,7 +21,7 @@ class WhatsappBot:
                 f"//span[@title='{grupo_ou_pessoa}']")
             time.sleep(3)
             campo_grupo.click()
-            chat_box = self.driver.find_element_by_class_name('_2A8P4')
+            chat_box = self.driver.find_element_by_class_name('_2A8P4') # Se atentar aqui, pois pode ser mudado a class no layout do whatsaapweb
             time.sleep(3)
             chat_box.click()
             chat_box.send_keys(self.mensagem)
