@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "C:\\Users\\Carlos Vinícius\\AppData\\Local\\Programs\\Python\\Python38\\python.exe"
+    // aqui você terá que instalar ou adicionar o caminho do Python instalado na sua máquina
+    "python.pythonPath": "C:\\Users\\Carlos Vinícius\\AppData\\Local\\Programs\\Python\\Python38\\python.exe" 
 }
